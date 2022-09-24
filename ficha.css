@@ -1,0 +1,153 @@
+body {
+    background: black;
+    height: 90vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 670px;
+    margin: 0 auto;
+}
+
+.container #ficha {
+    width: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+
+.container .ataques {
+    position: absolute;
+   
+    width: 200px;
+    height: 330px;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 22px;
+    z-index: 2;
+}
+
+.ataques img {
+    width: 500px;
+    transition: 1s;
+    z-index: 2;
+    margin-top: 1000px;
+    margin-left: 60px;
+    
+}
+
+
+.mover {
+    transform: translate(0px, -1550px);
+}
+
+
+.blur {
+    filter: blur(2px);
+}
+
+/* Contador puntos de golpe */
+
+.contador {
+    position: absolute;
+    width: 150px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(260px, -275px);
+    z-index: 4;
+    transition: 1s;
+    font-size: 30px;
+}
+
+.btn {
+    background: rgba(0, 0, 0, 0.685);
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-style: none;
+    color: white;
+    transition: 0.1s;
+}
+
+.desaparecer {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px 0 black;
+    border: 0.5px solid rgba(255, 255, 255, 0.802);
+
+}
+
+.container .rasgos {
+    position: absolute;
+   
+    width: 200px;
+    height: 330px;
+    bottom: 0;
+    margin-bottom: 40px;
+    margin-left: 450px;
+    z-index: 2;
+}
+
+.rasgos img {
+    width: 400px;
+    transition: 1s;
+    z-index: 2;
+    margin-top: 1000px;
+
+    
+}
+
+.mover2 {
+    transform: translate(-300px, -1400px);
+}
+
+
+/* Hechizos */
+
+.hechizos {
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    bottom: 378px;
+    margin-left: 480px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.802);
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+    font-family:Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    
+    
+}
+
+.hechizos a {
+    text-decoration: none;
+    color: white;
+}
+
+.hechizos:hover {
+    letter-spacing: 2px;
+}
+
+ #magia {
+    width: 650px;
+    position: absolute;
+    right: -2000px;
+    transition: 2s;
+
+}
+
+.movermagia {
+    transform: translate(-1970px, -100px);
+}
